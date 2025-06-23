@@ -22,7 +22,12 @@ FreeLynk is a modern web platform connecting clients and freelancers. It enables
 
 
 FreeLynk/
-- │
+- │   backend/
+- │   ├── controllers/
+- │   │   ├── authController.js
+- │   │   ├── bidController.js
+- │   │   ├── projectController.js
+- │   │   └── userController.js
 - │   ├── middleware/
 - │   │   └── auth.js
 - │   ├── models/
@@ -126,8 +131,8 @@ npm start
 | `email`     | `String`   | Unique email address                |
 | `password`  | `String`   | Hashed password                     |
 | `role`      | `String`   | Either `'client'` or `'freelancer'` |
-| `bio`       | `String`   | *(Optional)* Short user bio         |
-| `skills`    | `[String]` | *(Optional)* Freelancer skill set   |
+| `bio`       | `String`   |              Short user bio         |
+| `skills`    | `[String]` |              Freelancer skill set   |
 | `createdAt` | `Date`     | Timestamp of account creation       |
 
 

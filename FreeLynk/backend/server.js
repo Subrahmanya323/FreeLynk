@@ -13,7 +13,7 @@ app.use(cors({
 app.use(express.json());
 
 // MongoDB Connection
-const MONGODB_URI = 'mongodb+srv://studentAdmin1:8PtyQNZFIMtnjhVM@cluster0.hpoj4.mongodb.net/freelynkDB';
+const MONGODB_URI = 'mongodb+srv://<username>:<password>.hpoj4.mongodb.net/freelynkDB';
 
 console.log('Attempting to connect to MongoDB...');
 mongoose.connect(MONGODB_URI)
